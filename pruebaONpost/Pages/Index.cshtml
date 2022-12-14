@@ -1,0 +1,59 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<head>prueba onpost</head>
+
+<body>
+
+        <form method="post">
+
+                
+                <table>
+
+                    <tr>
+
+                        <td>nombre: </td>
+                        <td><input type="text" id="textfirstname" name="nombre"></td>
+
+                        
+
+                    </tr>
+
+
+                   <tr>
+
+                       <td>apellidos:</td>
+
+                       <td><input type="text" id="textapellidos" name="apellidos"></td>
+
+
+                   </tr>
+
+
+                   <tr>
+
+                       <td>
+
+                       </td>
+
+                       <td>
+
+                           <input type="submit" id="submit" asp-page-handler="Submit"/>
+
+                       </td>
+
+                   </tr>
+
+
+                </table>
+
+                @Model.name
+
+
+        </form>
+
+
+</body>
